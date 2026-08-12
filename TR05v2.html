@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>TR05v2</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h2 { margin-top: 28px; }
+    table { border-collapse: collapse; width: 100%; margin-bottom: 24px; }
+    th, td { border: 1px solid #ccc; padding: 6px 8px; text-align: left; }
+    th { background: #f2f2f2; }
+    </style>
+</head><body>
+<h2>Hoja1</h2>
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Categoria de la Causa</th>
+      <th>Código_Factor_RO</th>
+      <th>Descripción_Factor_RO</th>
+      <th>Código categoría</th>
+      <th>Descripción_Categoría</th>
+      <th>Código_causa nivel1</th>
+      <th>Descripción_causa_nivel1</th>
+      <th>Código_causa    nivel2</th>
+      <th>Descripción_causa_nivel2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>1</td>
+      <td>Fraude Interno</td>
+      <td>1</td>
+      <td>Actividades no autorizadas</td>
+      <td>1</td>
+      <td>Operaciones no reveladas(intencionalmente)</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>1</td>
+      <td>Fraude Interno</td>
+      <td>1</td>
+      <td>Actividades no autorizadas</td>
+      <td>2</td>
+      <td>Operaciones no autorizadas (con pérdidas pecuniarias)</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>1</td>
+      <td>Fraude Interno</td>
+      <td>1</td>
+      <td>Actividades no autorizadas</td>
+      <td>3</td>
+      <td>Valoración errónea de posiciones (intencional)</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>1</td>
+      <td>Fraude Interno</td>
+      <td>2</td>
+      <td>Hurto y Fraude</td>
+      <td>4</td>
+      <td>Robo</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>1</td>
+      <td>Fraude Interno</td>
+      <td>2</td>
+      <td>Hurto y Fraude</td>
+      <td>5</td>
+      <td>Malversación</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>1</td>
+      <td>Fraude Interno</td>
+      <td>2</td>
+      <td>Hurto y Fraude</td>
+      <td>6</td>
+      <td>Falsificación</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>1</td>
+      <td>Fraude Interno</td>
+      <td>2</td>
+      <td>Hurto y Fraude</td>
+      <td>7</td>
+      <td>Soborno</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>1</td>
+      <td>Fraude Interno</td>
+      <td>2</td>
+      <td>Hurto y Fraude</td>
+      <td>8</td>
+      <td>Apropiación de Cuentas</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>1</td>
+      <td>Fraude Interno</td>
+      <td>2</td>
+      <td>Hurto y Fraude</td>
+      <td>9</td>
+      <td>Contrabando</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>1</td>
+      <td>Fraude Interno</td>
+      <td>2</td>
+      <td>Hurto y Fraude</td>
+      <td>10</td>
+      <td>Evasión de Impuesto (intencional).</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>1</td>
+      <td>Eventos Externos</td>
+      <td>2</td>
+      <td>Fraude Externo</td>
+      <td>2</td>
+      <td>Hurto y Fraude</td>
+      <td>11</td>
+      <td>Robo</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>1</td>
+      <td>Eventos Externos</td>
+      <td>2</td>
+      <td>Fraude Externo</td>
+      <td>2</td>
+      <td>Hurto y Fraude</td>
+      <td>12</td>
+      <td>Falsificación</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>3</td>
+      <td>Relaciones Laborales y seguridad en el puesto de trabajo</td>
+      <td>3</td>
+      <td>Relaciones laborales</td>
+      <td>13</td>
+      <td>cuestiones relativas a remuneración</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>3</td>
+      <td>Relaciones Laborales y seguridad en el puesto de trabajo</td>
+      <td>3</td>
+      <td>Relaciones laborales</td>
+      <td>14</td>
+      <td>prestaciones sociales</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>3</td>
+      <td>Relaciones Laborales y seguridad en el puesto de trabajo</td>
+      <td>3</td>
+      <td>Relaciones laborales</td>
+      <td>15</td>
+      <td>extinción de contratos</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>3</td>
+      <td>Relaciones Laborales y seguridad en el puesto de trabajo</td>
+      <td>4</td>
+      <td>Higiene y seguridad en el trabajo</td>
+      <td>16</td>
+      <td>Casos  relacionados con las normas de higiene y seguridad en el trabajo</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>3</td>
+      <td>Relaciones Laborales y seguridad en el puesto de trabajo</td>
+      <td>4</td>
+      <td>Higiene y seguridad en el trabajo</td>
+      <td>17</td>
+      <td>Indemnización a los trabajadores</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>3</td>
+      <td>Relaciones Laborales y seguridad en el puesto de trabajo</td>
+      <td>5</td>
+      <td>Diversidad y discriminación</td>
+      <td>18</td>
+      <td>Todo tipo de discriminación</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>6</td>
+      <td>Adecuación, divulgación de información y confianza</td>
+      <td>19</td>
+      <td>Abuso de confianza</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>6</td>
+      <td>Adecuación, divulgación de información y confianza</td>
+      <td>20</td>
+      <td>Incumplimiento de pautas</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>6</td>
+      <td>Adecuación, divulgación de información y confianza</td>
+      <td>21</td>
+      <td>Aspectos de Adecuación</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>6</td>
+      <td>Adecuación, divulgación de información y confianza</td>
+      <td>22</td>
+      <td>Divulgación de Información (conocimiento del cliente, etc.)</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>6</td>
+      <td>Adecuación, divulgación de información y confianza</td>
+      <td>23</td>
+      <td>Quebrantamiento de la privacidad</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>6</td>
+      <td>Adecuación, divulgación de información y confianza</td>
+      <td>24</td>
+      <td>Ventas Agresivas</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>6</td>
+      <td>Adecuación, divulgación de información y confianza</td>
+      <td>25</td>
+      <td>Abuso de información confidencial</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>7</td>
+      <td>Gestión de cuentas de clientes</td>
+      <td>26</td>
+      <td>Acceso no autorizado a cuentas</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>7</td>
+      <td>Gestión de cuentas de clientes</td>
+      <td>27</td>
+      <td>Registros incorrectos de clientes ( con generación de pérdida)</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>7</td>
+      <td>Gestión de cuentas de clientes</td>
+      <td>28</td>
+      <td>Pérdida o daño de activos de clientes por negligencia</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>2</td>
+      <td>Tecnología</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>7</td>
+      <td>Gestión de cuentas de clientes</td>
+      <td>29</td>
+      <td>Acceso no autorizado a cuentas</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>2</td>
+      <td>Tecnología</td>
+      <td>6</td>
+      <td>Interrupción del negocio y fallos en los sistemas</td>
+      <td>8</td>
+      <td>Sistemas</td>
+      <td>30</td>
+      <td>Pérdidas por fallas en equipos de hardware, software o telecomunicaciones</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>2</td>
+      <td>Eventos Externos</td>
+      <td>6</td>
+      <td>Interrupción del negocio y fallos en los sistemas</td>
+      <td>8</td>
+      <td>Sistemas</td>
+      <td>31</td>
+      <td>Fallas en energía eléctrica</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>2</td>
+      <td>Tecnología</td>
+      <td>2</td>
+      <td>Fraude Externo</td>
+      <td>9</td>
+      <td>Seguridad de los Sistemas</td>
+      <td>32</td>
+      <td>Daños por ataques informaticos, robo de información</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>10</td>
+      <td>Prácticas de mercado improcedentes</td>
+      <td>33</td>
+      <td>Prácticas restrictivas de la competencia -  RESTRINGIDO</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>10</td>
+      <td>Prácticas de mercado improcedentes</td>
+      <td>34</td>
+      <td>Prácticas comerciales  - RESTRINGIDO</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>3</td>
+      <td>Procesos Internos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>10</td>
+      <td>Prácticas de mercado improcedentes</td>
+      <td>35</td>
+      <td>Prácticas de mercado improcedentes - Practicas ajenas a la competencia leal.</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>11</td>
+      <td>Actividades de asesoramiento</td>
+      <td>36</td>
+      <td>Litigios sobre resultados de las actividades de asesoramiento -   RESTRINGIDO</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>10</td>
+      <td>Prácticas de mercado improcedentes</td>
+      <td>37</td>
+      <td>Prácticas de mercado improcedentes - Comisión de actividades ílicitas en relación al blanqueo de capitales.</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>7</td>
+      <td>Daños a activos materiales</td>
+      <td>12</td>
+      <td>Desastres y otros acontecimientos</td>
+      <td>38</td>
+      <td>Pérdidas por desastres naturales</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>7</td>
+      <td>Daños a activos materiales</td>
+      <td>12</td>
+      <td>Desastres y otros acontecimientos</td>
+      <td>39</td>
+      <td>Pérdidas materiales por terrorismo, vandalismo, otros</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>13</td>
+      <td>Contrapartes comerciales</td>
+      <td>40</td>
+      <td>Fallos de contrapartes distintas de clientes</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>13</td>
+      <td>Contrapartes comerciales</td>
+      <td>41</td>
+      <td>Otros litigios con contrapartes distintas de clientes</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>14</td>
+      <td>Distribuidores y proveedores</td>
+      <td>42</td>
+      <td>Subcontratación</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>14</td>
+      <td>Distribuidores y proveedores</td>
+      <td>43</td>
+      <td>Litigios con proveedores</td>
+    </tr>
+    <tr>
+      <td>Externo</td>
+      <td>3</td>
+      <td>Eventos Externos</td>
+      <td>8</td>
+      <td>Deficiencias de índole Legal</td>
+      <td>15</td>
+      <td>Legal</td>
+      <td>44</td>
+      <td>Demandas contra la entidad bancaria</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>10</td>
+      <td>Prácticas de mercado improcedentes</td>
+      <td>45</td>
+      <td>Manipulación del mercado</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>10</td>
+      <td>Prácticas de mercado improcedentes</td>
+      <td>46</td>
+      <td>Abuso de información privilegiada (a favor de la empresa)</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>16</td>
+      <td>Productos defectuoso</td>
+      <td>47</td>
+      <td>Defectos del producto (no autorizado, etc)</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>16</td>
+      <td>Productos defectuoso</td>
+      <td>48</td>
+      <td>Error de los Modelos - RESTRINGIDO</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Recursos Humanos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>17</td>
+      <td>Selección, patrocinio y riesgo</td>
+      <td>49</td>
+      <td>Ausencia de investigación a clientes conforme a las directrices</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>4</td>
+      <td>Clientes, productos y prácticas empresariales</td>
+      <td>17</td>
+      <td>Selección, patrocinio y riesgo</td>
+      <td>50</td>
+      <td>Exceso de los límites de riesgo frente de clientes</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>8</td>
+      <td>Deficiencias de índole Legal</td>
+      <td>15</td>
+      <td>Legal</td>
+      <td>51</td>
+      <td>Pérdida que surgen por las sanciones impuestas por el incumplimiento de leyes y regulaciones.</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Recursos Humanos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>18</td>
+      <td>Recepción, ejecución y mantenimiento de operaciones</td>
+      <td>52</td>
+      <td>Errores de introducción de datos</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>18</td>
+      <td>Recepción, ejecución y mantenimiento de operaciones</td>
+      <td>53</td>
+      <td>Mantenimiento o descarga</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>18</td>
+      <td>Recepción, ejecución y mantenimiento de operaciones</td>
+      <td>54</td>
+      <td>Incumplimiento de plazos o de responsabilidades</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>18</td>
+      <td>Recepción, ejecución y mantenimiento de operaciones</td>
+      <td>55</td>
+      <td>Ejecución errónea de modelos/sistemas  -  RESTRINGIDO</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>1</td>
+      <td>Recursos Humanos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>18</td>
+      <td>Recepción, ejecución y mantenimiento de operaciones</td>
+      <td>56</td>
+      <td>Errores contables</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>18</td>
+      <td>Recepción, ejecución y mantenimiento de operaciones</td>
+      <td>57</td>
+      <td>Errores en el proceso de compensación de valores y liquidación de efectivo</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>19</td>
+      <td>Seguimiento y presentación de informes</td>
+      <td>58</td>
+      <td>Incumplimiento de la obligación de informar  -</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>19</td>
+      <td>Seguimiento y presentación de informes</td>
+      <td>59</td>
+      <td>Inexactitud de informes externos (con generación de perdidas)-  RESTRINGIDO</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>20</td>
+      <td>Aceptación de clientes y documentación</td>
+      <td>60</td>
+      <td>Inexistencia de autorizaciones</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>20</td>
+      <td>Aceptación de clientes y documentación</td>
+      <td>61</td>
+      <td>Rechazos de clientes</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>20</td>
+      <td>Aceptación de clientes y documentación</td>
+      <td>62</td>
+      <td>Documentos jurídicos inexistentes</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>5</td>
+      <td>Ejecución, entrega y gestión de procesos</td>
+      <td>20</td>
+      <td>Aceptación de clientes y documentación</td>
+      <td>63</td>
+      <td>Documentos jurídicos incompletos</td>
+    </tr>
+    <tr>
+      <td>Interno</td>
+      <td>4</td>
+      <td>Procesos Internos</td>
+      <td>8</td>
+      <td>Deficiencias de índole Legal</td>
+      <td>15</td>
+      <td>Legal</td>
+      <td>64</td>
+      <td>Defectos en el diseño o formalización de los contratos</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>5</td>
+      <td>Información de gestión</td>
+      <td>9</td>
+      <td>Deficiencias de los sistemas de información de gestión</td>
+      <td>21</td>
+      <td>Supuestos incorrectos</td>
+      <td>65</td>
+      <td>Supuestos incorrectos</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>5</td>
+      <td>Información de gestión</td>
+      <td>9</td>
+      <td>Deficiencias de los sistemas de información de gestión</td>
+      <td>22</td>
+      <td>Indicadores sesgados</td>
+      <td>66</td>
+      <td>Indicadores sesgados</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>5</td>
+      <td>Información de gestión</td>
+      <td>9</td>
+      <td>Deficiencias de los sistemas de información de gestión</td>
+      <td>23</td>
+      <td>Información deficiente</td>
+      <td>67</td>
+      <td>Información deficiente</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>5</td>
+      <td>Información de gestión</td>
+      <td>9</td>
+      <td>Deficiencias de los sistemas de información de gestión</td>
+      <td>24</td>
+      <td>Análisis no contrastados</td>
+      <td>68</td>
+      <td>Análisis no contrastados</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>6</td>
+      <td>Riesgo de modelo</td>
+      <td>10</td>
+      <td>Deficiencias en los modelos</td>
+      <td>25</td>
+      <td>Supuestos incorrectos</td>
+      <td>69</td>
+      <td>Supuestos incorrectos</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>6</td>
+      <td>Riesgo de modelo</td>
+      <td>10</td>
+      <td>Deficiencias en los modelos</td>
+      <td>26</td>
+      <td>Deficiencias de los datos</td>
+      <td>70</td>
+      <td>Deficiencias de los datos</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>6</td>
+      <td>Riesgo de modelo</td>
+      <td>10</td>
+      <td>Deficiencias en los modelos</td>
+      <td>27</td>
+      <td>Estimaciones sesgadas</td>
+      <td>71</td>
+      <td>Estimaciones sesgadas</td>
+    </tr>
+    <tr>
+      <td>Externo/Interno</td>
+      <td>6</td>
+      <td>Riesgo de modelo</td>
+      <td>10</td>
+      <td>Deficiencias en los modelos</td>
+      <td>28</td>
+      <td>Ausecia de contrastes</td>
+      <td>72</td>
+      <td>Ausencia de contrastes</td>
+    </tr>
+  </tbody>
+</table>
+</body></html>
